@@ -28,7 +28,7 @@ import com.jason.compose.ui.theme.ComposeTestTheme
 fun setData2List(list: List<Person>) {
     Column() {
         LazyRow(content = {
-            itemsIndexed(list) { int,person ->
+            itemsIndexed(list) { int, person ->
                 ListItem(person = person)
 
             }
@@ -72,8 +72,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier.padding(2.dp)) {
 }
 
 data class Person(val name: String, val describe: String, val pic: Int)
-
-
 
 
 @Composable
